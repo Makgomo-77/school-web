@@ -1,1 +1,51 @@
+/* Custom styles to complement Tailwind */
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
+.gallery-image:hover {
+    transform: scale(1.03);
+}
+
+/* Animation for FAQ items */
+.faq-content {
+    transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e40af;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e3a8a;
+}
+
+/* Print styles for parents page */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
