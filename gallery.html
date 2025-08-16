@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bright Future Academy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="assets/images/logo.png" alt="School Logo" class="h-12">
+                    <span class="text-xl font-bold">Bright Future Academy</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-blue-200">Home</a>
+                    <a href="cms.html" class="text-white hover:text-blue-200">CMS</a>
+                    <a href="gallery.html" class="text-white font-semibold hover:text-blue-200">Gallery</a>
+                    <a href="testimonials.html" class="text-white hover:text-blue-200">Testimonials</a>
+                    <a href="parents.html" class="text-white hover:text-blue-200">Parents</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Gallery Header -->
+    <header class="bg-blue-700 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Our Gallery</h1>
+            <p class="text-xl">Celebrating our students' achievements and memorable moments</p>
+        </div>
+    </header>
+
+    <!-- Gallery Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <!-- Gallery Filters -->
+            <div class="mb-8 flex flex-wrap justify-center gap-4">
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">All</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">Academic</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">Sports</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">Arts</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">Events</button>
+                <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">Achievements</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery1.jpg" alt="Science Fair" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Science Fair</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Regional Science Competition</h3>
+                        <p class="text-gray-600 text-sm">Our students won 3 awards at the regional science fair.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery2.jpg" alt="Basketball Team" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Sports</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Championship Basketball Team</h3>
+                        <p class="text-gray-600 text-sm">Our team won the state championship for the third year in a row.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery3.jpg" alt="Art Exhibition" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Arts</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Annual Art Exhibition</h3>
+                        <p class="text-gray-600 text-sm">Student artwork showcased at the city art museum.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery4.jpg" alt="Graduation" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Events</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Class of 2023 Graduation</h3>
+                        <p class="text-gray-600 text-sm">Celebrating our graduating seniors' achievements.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery5.jpg" alt="Robotics Club" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Academic</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Robotics Club Success</h3>
+                        <p class="text-gray-600 text-sm">Our robotics team qualified for the national competition.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery6.jpg" alt="Music Concert" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Arts</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Spring Music Concert</h3>
+                        <p class="text-gray-600 text-sm">Students performed classical and contemporary pieces.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery7.jpg" alt="Debate Team" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Academic</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Debate Team Victory</h3>
+                        <p class="text-gray-600 text-sm">Our debate team won the state championship.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/gallery8.jpg" alt="Community Service" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="text-sm text-blue-600">Events</span>
+                        <h3 class="text-lg font-semibold mt-1 mb-2">Community Service Day</h3>
+                        <p class="text-gray-600 text-sm">Students volunteered at local shelters and parks.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center">
+                <nav class="inline-flex rounded-md shadow">
+                    <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-blue-600 font-medium">1</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">2</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">3</a>
+                    <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo-white.png" alt="School Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Bright Future Academy provides exceptional education for students from kindergarten through high school.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="cms.html" class="text-gray-400 hover:text-white">CMS</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="parents.html" class="text-gray-400 hover:text-white">Parents</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">123 Education Street</p>
+                        <p class="mb-2">Learning City, LC 12345</p>
+                        <p class="mb-2">Phone: (123) 456-7890</p>
+                        <p>Email: info@brightfuture.edu</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Bright Future Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
