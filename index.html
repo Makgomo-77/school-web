@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="assets/images/logo.png" alt="School Logo" class="h-12">
+                    <span class="text-xl font-bold">Bright Future Academy</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-blue-200">Home</a>
+                    <a href="cms.html" class="text-white hover:text-blue-200">CMS</a>
+                    <a href="gallery.html" class="text-white hover:text-blue-200">Gallery</a>
+                    <a href="testimonials.html" class="text-white hover:text-blue-200">Testimonials</a>
+                    <a href="parents.html" class="text-white hover:text-blue-200">Parents</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to Bright Future Academy</h1>
+            <p class="text-xl md:text-2xl mb-8">Where Excellence in Education Meets Nurturing Environment</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#about" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-100 transition duration-300">Learn More</a>
+                <a href="parents.html" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300">Parent Portal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="assets/images/school-building.jpg" alt="School Building" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Our School</h2>
+                    <p class="text-gray-600 mb-4">Bright Future Academy has been providing quality education since 1995. We are committed to fostering academic excellence while nurturing the unique talents of each student.</p>
+                    <p class="text-gray-600 mb-6">Our dedicated faculty and state-of-the-art facilities create an environment where students can thrive academically, socially, and emotionally.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-blue-800 mb-2">500+ Students</h3>
+                            <p class="text-gray-600">Thriving in our community</p>
+                        </div>
+                        <div class="bg-blue-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-blue-800 mb-2">30+ Programs</h3>
+                            <p class="text-gray-600">Academic and extracurricular</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Quick Links</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="parents.html#calendar" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-calendar-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">School Calendar</h3>
+                    <p class="text-gray-600">View important dates and events</p>
+                </a>
+                <a href="gallery.html" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-images text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Photo Gallery</h3>
+                    <p class="text-gray-600">See our students in action</p>
+                </a>
+                <a href="parents.html#resources" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-file-download text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Download Forms</h3>
+                    <p class="text-gray-600">Access important documents</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Latest News</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/news1.jpg" alt="News 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">June 15, 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Science Fair Winners</h3>
+                        <p class="text-gray-600">Our students won 3 awards at the regional science fair competition.</p>
+                        <a href="#" class="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/news2.jpg" alt="News 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">May 28, 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">New Sports Facilities</h3>
+                        <p class="text-gray-600">The school has inaugurated new basketball courts and a swimming pool.</p>
+                        <a href="#" class="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800">Read More</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="assets/images/news3.jpg" alt="News 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">May 10, 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Summer Camp Registration</h3>
+                        <p class="text-gray-600">Registration for our popular summer enrichment program is now open.</p>
+                        <a href="#" class="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo-white.png" alt="School Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Bright Future Academy provides exceptional education for students from kindergarten through high school.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="cms.html" class="text-gray-400 hover:text-white">CMS</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="parents.html" class="text-gray-400 hover:text-white">Parents</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">123 Education Street</p>
+                        <p class="mb-2">Learning City, LC 12345</p>
+                        <p class="mb-2">Phone: (123) 456-7890</p>
+                        <p>Email: info@brightfuture.edu</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                    <h3 class="text-lg font-semibold mt-6 mb-4">Newsletter</h3>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Bright Future Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
