@@ -1,1 +1,399 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents - Bright Future Academy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="assets/images/logo.png" alt="School Logo" class="h-12">
+                    <span class="text-xl font-bold">Bright Future Academy</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-blue-200">Home</a>
+                    <a href="cms.html" class="text-white hover:text-blue-200">CMS</a>
+                    <a href="gallery.html" class="text-white hover:text-blue-200">Gallery</a>
+                    <a href="testimonials.html" class="text-white hover:text-blue-200">Testimonials</a>
+                    <a href="parents.html" class="text-white font-semibold hover:text-blue-200">Parents</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parents Header -->
+    <header class="bg-blue-700 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Parent Resources</h1>
+            <p class="text-xl">Everything you need to support your child's education journey</p>
+        </div>
+    </header>
+
+    <!-- Parents Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <!-- Calendar Section -->
+            <div id="calendar" class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">School Calendar</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div id="parentCalendar"></div>
+                </div>
+            </div>
+            
+            <!-- Resources Section -->
+            <div id="resources" class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Resources & Forms</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Resource 1 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-pdf text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">School Handbook</h3>
+                        <p class="text-gray-600 mb-4">Download our comprehensive school handbook with all policies and procedures.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Resource 2 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-alt text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Enrollment Forms</h3>
+                        <p class="text-gray-600 mb-4">All forms needed for new student enrollment and annual re-enrollment.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Resource 3 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-bus text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Transportation Form</h3>
+                        <p class="text-gray-600 mb-4">Request bus transportation or update your child's transportation details.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Resource 4 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-utensils text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Lunch Menu</h3>
+                        <p class="text-gray-600 mb-4">Monthly lunch menu and meal payment information.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Resource 5 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-medical text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Health Forms</h3>
+                        <p class="text-gray-600 mb-4">Medical forms, immunization records, and medication authorization.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Resource 6 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-invoice-dollar text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Tuition & Fees</h3>
+                        <p class="text-gray-600 mb-4">Current tuition rates, payment plans, and financial aid information.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 inline-flex items-center">
+                            Download <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parent Portal -->
+            <div class="mb-16 bg-blue-50 rounded-lg p-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-6 text-center">Parent Portal</h2>
+                    <p class="text-gray-700 mb-8 text-center">Access your child's grades, attendance, and school communications through our secure parent portal.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4">Existing Users</h3>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="username" class="block text-gray-700 mb-2">Username</label>
+                                    <input type="text" id="username" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="block text-gray-700 mb-2">Password</label>
+                                    <input type="password" id="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Login</button>
+                                <div class="mt-4 text-center">
+                                    <a href="#" class="text-blue-600 hover:text-blue-800">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold mb-4">New Users</h3>
+                            <p class="text-gray-600 mb-6">To create a parent portal account, you'll need your activation code which was provided in your enrollment packet. If you need assistance, please contact the school office.</p>
+                            <button class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">Activate Account</button>
+                            <div class="mt-6">
+                                <h4 class="font-semibold mb-2">Portal Features:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>View grades and assignments</li>
+                                    <li>Check attendance records</li>
+                                    <li>Communicate with teachers</li>
+                                    <li>Update contact information</li>
+                                    <li>Pay tuition and fees</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <!-- FAQ Item 1 -->
+                        <div class="border-b">
+                            <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-semibold">What are the school hours?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content px-6 pb-4 hidden">
+                                <p class="text-gray-600">Regular school hours are from 8:00 AM to 3:00 PM for all grades. Early drop-off is available starting at 7:30 AM, and after-school care is available until 6:00 PM for an additional fee.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="border-b">
+                            <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-semibold">How do I report my child's absence?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content px-6 pb-4 hidden">
+                                <p class="text-gray-600">Please call the school office at (123) 456-7890 by 8:30 AM to report your child's absence. You may also email attendance@brightfuture.edu with your child's name, grade, and reason for absence.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="border-b">
+                            <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-semibold">What is the dress code policy?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content px-6 pb-4 hidden">
+                                <p class="text-gray-600">Bright Future Academy has a standardized dress code. Solid color polo shirts (navy, white, or light blue) with khaki or navy pants, skirts, or shorts. Complete details are available in the school handbook.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="border-b">
+                            <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-semibold">How can I get involved as a parent?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content px-6 pb-4 hidden">
+                                <p class="text-gray-600">We welcome parent involvement! Opportunities include the PTA, classroom volunteering, chaperoning field trips, and assisting with special events. Contact the front office or your child's teacher to learn more.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 5 -->
+                        <div class="border-b">
+                            <button class="faq-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50">
+                                <span class="font-semibold">What tutoring resources are available?</span>
+                                <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content px-6 pb-4 hidden">
+                                <p class="text-gray-600">We offer free peer tutoring after school on Tuesdays and Thursdays. Teachers are available for extra help during designated office hours. Additionally, we maintain a list of recommended private tutors upon request.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="bg-blue-700 text-white rounded-lg p-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4">Need More Help?</h2>
+                    <p class="text-xl mb-6">Our parent support team is here to assist you with any questions or concerns.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+                            <p>(123) 456-7890</p>
+                            <p class="text-sm text-blue-200">Mon-Fri, 8:00 AM - 4:30 PM</p>
+                        </div>
+                        <div>
+                            <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+                            <p>parentsupport@brightfuture.edu</p>
+                            <p class="text-sm text-blue-200">Typically responds within 24 hours</p>
+                        </div>
+                        <div>
+                            <div class="bg-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-calendar-check text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Schedule Meeting</h3>
+                            <p>Book a time with our staff</p>
+                            <a href="#" class="text-blue-200 hover:text-white underline">Schedule Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/images/logo-white.png" alt="School Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Bright Future Academy provides exceptional education for students from kindergarten through high school.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="cms.html" class="text-gray-400 hover:text-white">CMS</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="parents.html" class="text-gray-400 hover:text-white">Parents</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">123 Education Street</p>
+                        <p class="mb-2">Learning City, LC 12345</p>
+                        <p class="mb-2">Phone: (123) 456-7890</p>
+                        <p>Email: info@brightfuture.edu</p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Bright Future Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize calendar
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('parentCalendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'First Day of School',
+                        start: '2023-08-21',
+                        color: '#1e40af'
+                    },
+                    {
+                        title: 'Back to School Night',
+                        start: '2023-08-28',
+                        color: '#4338ca'
+                    },
+                    {
+                        title: 'Labor Day - No School',
+                        start: '2023-09-04',
+                        color: '#6b7280'
+                    },
+                    {
+                        title: 'Parent-Teacher Conferences',
+                        start: '2023-10-10',
+                        end: '2023-10-12',
+                        color: '#7c3aed'
+                    },
+                    {
+                        title: 'Fall Break',
+                        start: '2023-11-20',
+                        end: '2023-11-24',
+                        color: '#6b7280'
+                    },
+                    {
+                        title: 'Winter Concert',
+                        start: '2023-12-15',
+                        color: '#4338ca'
+                    },
+                    {
+                        title: 'Winter Break',
+                        start: '2023-12-22',
+                        end: '2024-01-05',
+                        color: '#6b7280'
+                    }
+                ]
+            });
+            calendar.render();
+            
+            // FAQ accordion functionality
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+                    
+                    // Toggle content
+                    content.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    icon.classList.toggle('transform');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
